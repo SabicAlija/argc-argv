@@ -1,0 +1,51 @@
+= argc & argv
+
+Alija Sabic, link:mailto:sabic.alija@gmail.com?subject=GitHub:&#160;argc-argv[sabic.alija@gmail.com]
+
+
+Pull this repository by entering:
+
+----
+~$ git clone https://github.com/SabicAlija/argc-argv.git
+----
+
+== Compilation
+
+To create an *executable* enter:
+
+----
+~$ cd argc-argv
+~/argc-argv$ gcc hello.c -o hello
+----
+
+[TIP]
+=====
+In case you don't have `gcc` installed on your PC, enter `sudo apt install build-essential` (on Ubuntu) or `yum install gcc` (on Fedora).
+=====
+
+Take a look at what files are currently in the directory by entering
+
+----
+~/argc-argv$ ls
+hello  hello.c  README.adoc
+----
+
+== Execution
+
+To run the newly created program `hello` enter
+
+[subs="verbatim,macros"]
+----
+pass:q[~/argc-argv$ ./*hello*]
+./hello starting...
+
+No arguments provided.
+pass:q[~/argc-argv$ ./*hello* my name is rabbit]
+./hello starting...
+
+4 arguments where passed.
+ Argument No. 2: my
+ Argument No. 3: name
+ Argument No. 4: is
+ Argument No. 5: rabbit
+----
